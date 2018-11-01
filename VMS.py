@@ -62,17 +62,17 @@ file_full = 'path_v' + 'VIN'
 date = getdatetime('daymonthyear')
 # What vehicle are we playing with today?
 clear
-while false
- VIN = input("What is the VIN Number. (Type "x" to exit")
-  VIN2 = input("Please confirm the VIN Number (Type "x" to exit")
 
-   if VIN2 == VIN
-     break
-    else
-     print ("The Vin Numbers do not match! please try again. Type "x" both times to exit program.")
+VIN = input('What is the VIN Number. (Type "x" to exit')
+VIN2 = input('Please confirm the VIN Number (Type "x" to exit')
+
+if VIN2 == VIN:
+    break
+else:
+    print ('The Vin Numbers do not match! please try again. Type "x" both times to exit program.')
 
 # Escape sequence
-if VIN == "x"
+if VIN == "x":
  exit(
 
       )
@@ -81,31 +81,31 @@ try:
     with open(file_full) as file:
         pass
 except IOError as e:
-    print "Unable to open the file on that vehicle. Have you created it yet?"
+    print ("Unable to open the file on that vehicle. Have you created it yet?")
 # NOTE: Build a program to create files on new Vehicles.
 mileage = input("What is the mileage?")
-print "Please describle the problem?"
+print ("Please describle the problem?")
 problem = input()
 
 
 # Did we use any parts?
-print "Were any parts or supplies used? (Y/N)"
+print ("Were any parts or supplies used? (Y/N)")
 yn = input ()
-    a = s.lower(yn)
-    del yn
-    __ = a[0]
-    if __ = "y"
-        while __= "y"
-            make = input("What is the make of the part")
-            part = input("What is the part number?")
-            parts = [make + ',' + part]
-                for item in parts
-                partslist.append(item)
-                yn = input("Any more")
-                yn = input ()
-                    a = s.lower(yn)
-                    del yn
-                    __ = a[0]
+a = s.lower(yn)
+del yn
+__ = a[0]
+if __ = "y"
+    while __= "y"
+        make = input("What is the make of the part")
+        part = input("What is the part number?")
+        parts = [make + ',' + part]
+            for item in parts
+            partslist.append(item)
+            yn = input("Any more")
+            yn = input ()
+                a = s.lower(yn)
+                del yn
+                __ = a[0]
 
 # Ok now it is time to write all this in a file
 # want to write in csv format: date,mileage,problem,parts,parts,parts,etc
