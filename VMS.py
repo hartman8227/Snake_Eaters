@@ -13,6 +13,8 @@
 import os
 
 # Def Space
+
+
 def clear():
     if (os.name == 'nt'):
         c = os.system('cls')
@@ -20,26 +22,27 @@ def clear():
         c = os.system('clear')
     del c
 
+
 # Variable space
 path_v = "~/VMS/vehicles/"
-file_full ='path_v' + 'VIN'
+file_full = 'path_v' + 'VIN'
 
 # What vehicle are we playing with today?
 clear
 while false
-    VIN = raw_input("What is the VIN Number. (Type "x" to exit")
-    VIN2 = raw_input("Please confirm the VIN Number (Type "x" to exit")
+ VIN = raw_input("What is the VIN Number. (Type "x" to exit")
+  VIN2 = raw_input("Please confirm the VIN Number (Type "x" to exit")
 
-    if VIN2 == VIN
-        break
-    else;
-        print ("The Vin Numbers do not match! please try again. Type "x" both times to exit program.")
+   if VIN2 == VIN
+     break
+    else
+     print ("The Vin Numbers do not match! please try again. Type "x" both times to exit program.")
 
 # Escape sequence
 if VIN == "x"
-    exit(
+ exit(
 
-    )
+      )
 # Open that vehicle's file or create it if it doesn't exist
 try:
     with open(file_full) as file:
@@ -53,4 +56,4 @@ problem = raw_input()
 
 # Did we use any parts?
 
-        # Any other parts?
+     # Any other parts?
