@@ -22,6 +22,7 @@ def clear():
         c = os.system('clear')
     del c
 
+
 def getdatetime(timedateformat='complete'):
         from datetime import datetime
         timedateformat = timedateformat.lower()
